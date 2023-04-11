@@ -7,6 +7,9 @@
 - [Composer](https://getcomposer.org/)
 - [WP-CLI](https://wp-cli.org/)
 
+
+## Command
+
 WordPress を起動する:
 
 ```bash
