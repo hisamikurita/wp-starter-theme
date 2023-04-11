@@ -9,7 +9,7 @@
     "db-export": "npm run wp-env run cli wp db export sql/wpenv.sql; gzip -f sql/wpenv.sql",
     "wp-start": "npm run wp-env start",
     "wp-restart": "npm run wp-env start --update",
-    "wp-setup": "npm run wp-start && npm run import",
+    "wp-setup": "npm run wp-start && npm run db-import",
     "wp-destroy": "npm run wp-env destroy"
   },
   "author": "",
