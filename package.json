@@ -5,12 +5,10 @@
   "main": "index.js",
   "scripts": {
     "wp-env": "wp-env",
-    "import": "npm run wp-env run cli wp db import sql/wpenv.sql",
-    "g-import": "gunzip < sql/wpenv.sql.gz | npm run wp-env run cli wp db import -",
-    "export": "npm run wp-env run cli wp db export sql/wpenv.sql",
-    "g-export": "npm run wp-env run cli wp db export - | gzip > sql/wpenv.sql.gz",
+    "import": "gzip -d sql/wpenv.sql.gz | npm run wp-env run cli wp db import sql/wpenv.sql",
+    "export": "npm run wp-env run cli wp db export sql/wpenv.sql; gzip -f sql/wpenv.sql",
     "wp-start": "npm run wp-env start",
-    "wp-setup": "npm run wp-env start && npm run import"
+    "wp-setup": "npm run wp-start && npm run import"
   },
   "author": "",
   "license": "ISC",
