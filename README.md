@@ -9,7 +9,7 @@
 
 ## Local Environment Setup
 
-pacakge install
+package install
 
 ```bash
 npm run ci or npm run install
