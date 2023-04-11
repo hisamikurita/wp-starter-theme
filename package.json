@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wp-env": "wp-env",
+    "import": "npm run wp-env run cli wp db import sql/wpenv.sql",
+    "g-import": "gunzip < sql/wpenv.sql.gz | npm run wp-env run cli wp db import -",
+    "export": "npm run wp-env run cli wp db export sql/wpenv.sql",
+    "g-export": "npm run wp-env run cli wp db export - | gzip > sql/wpenv.sql.gz",
+    "wp-start": "npm run wp-env start",
+    "wp-setup": "npm run wp-env start && npm run import"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/env": "^5.15.0"
+  }
+}
