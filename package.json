@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build",
+    "preview": "vite preview",
     "wp-env": "wp-env",
     "db-import": "gzip -d sql/wpenv.sql.gz | npm run wp-env run cli wp db import sql/wpenv.sql",
     "db-export": "npm run wp-env run cli wp db export sql/wpenv.sql; gzip -f sql/wpenv.sql",
@@ -15,6 +18,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/env": "^5.15.0"
+    "@wordpress/env": "^5.15.0",
+    "sass": "^1.62.0",
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
   }
 }

@@ -2,8 +2,8 @@
 get_header();
 ?>
 
-<div class="index">
-  <h1>Index</h1>
+<div class="archive">
+  <h1>ARCHIVE</h1>
 </div>
 
 <?php
