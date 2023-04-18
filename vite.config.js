@@ -1,7 +1,7 @@
 import path from "path";
 import { defineConfig } from "vite"; 
 
-const theme = '/resources/wp-content/themes/mytheme/assets'
+const theme = '/mytheme/assets'
 
 export default defineConfig({
   root: "",

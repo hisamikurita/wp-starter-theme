@@ -21,4 +21,10 @@ wp start up & db import
 npm run wp-setup
 ```
 
+frontend build start
+
+```bash
+npm run dev
+```
+
 open <http://localhost:8000/>

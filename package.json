@@ -15,7 +15,7 @@
     "wp-setup": "npm run wp-start && npm run db-import",
     "wp-destroy": "npm run wp-env destroy"
   },
-  "author": "",
+  "author": "HISAMI KURITA",
   "license": "ISC",
   "devDependencies": {
     "@wordpress/env": "^5.15.0",
