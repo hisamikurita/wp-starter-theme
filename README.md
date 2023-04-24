@@ -21,6 +21,13 @@ wp start up & db import
 npm run wp-setup
 ```
 
+wp login
+
+open <http://localhost:8000/wp-admin>
+
+user : admin
+password : password
+
 frontend build start
 
 ```bash

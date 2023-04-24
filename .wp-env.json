@@ -6,7 +6,7 @@
     "https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip"
   ],
   "themes": [
-    "./mytheme/"
+    "./theme/"
   ],
   "port": 8000,
   "env": {

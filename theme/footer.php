@@ -4,7 +4,7 @@
   </div>
 </footer>
 <?php wp_footer(); ?>
-<script type="module" crossorigin src="<?= 'http://localhost:3000/mytheme/assets/app.js' ?>"></script>
+<script type="module" crossorigin src="<?= 'http://localhost:3000/assets/app.js' ?>"></script>
 </body>
 
 </html>
