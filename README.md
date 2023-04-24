@@ -23,10 +23,10 @@ npm run wp-setup
 
 wp login
 
-```bash
 open <http://localhost:8000/wp-admin>
-user : admin
-password : password
+
+```bash
+user : admin / password : password
 ```
 
 frontend build start
