@@ -26,7 +26,8 @@ wp login
 open <http://localhost:8000/wp-admin>
 
 ```bash
-user : admin / password : password
+user : admin
+password : password
 ```
 
 frontend build start
