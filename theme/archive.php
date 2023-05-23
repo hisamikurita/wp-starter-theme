@@ -3,8 +3,7 @@ get_header();
 ?>
 
 <div class="archive">
-  <h1>ARCHIVE</h1>
-
+  <h1 text-[30px]>ARCHIVE</h1>
 </div>
 
 <?php

@@ -1,8 +1,4 @@
-<footer>
-  <div class="container">
-    <p class="text-center">Copyright © Webst8 All Rights Reserved.</p>
-  </div>
-</footer>
+<?php get_template_part('./partials/global-footer') ?>
 <?php wp_footer(); ?>
 <script type="module" crossorigin src="<?= 'http://localhost:3000/assets/app.js' ?>"></script>
 </body>

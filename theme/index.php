@@ -3,7 +3,10 @@ get_header();
 ?>
 
 <div class="index">
-  <h1 class="text-[200px] text-center">Index</h1>
+  <div id="top-vg">
+    <img src="<?= vite_src_images('sample-02.jpg') ?>" width="1280" height="600" alt="">
+  </div>
+  <h1 class="text-[120px] text-center">Index</h1>
 </div>
 
 <?php

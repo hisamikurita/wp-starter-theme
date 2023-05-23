@@ -2,8 +2,8 @@
 // include your assets here
 
 // get styles
-import "./scss/tailwind.css"
-import "./scss/app.scss"
+import "./css/tailwind.css"
+import "./css/global.scss"
 
 // get scripts
 import './js/app.js'
