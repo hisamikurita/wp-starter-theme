@@ -9,5 +9,5 @@
   <title>タイトル</title>
 </head>
 
-<body>
+<body <?php body_class("bg-black p-[30px] font-yugo text-[16px] text-white"); ?>>
   <?php get_template_part('./partials/global-header') ?>
