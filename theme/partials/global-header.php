@@ -1,4 +1,4 @@
-<header>
+<header class="fixed top-[30px] left-[30px]">
   <nav>
     <ul class="flex gap-[20px]">
       <li><a href="<?= URL_HOME ?>">HOME</a></li>
