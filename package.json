@@ -1,8 +1,7 @@
 {
   "name": "wp-starter-theme",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "wordpress starter theme by wp-env & vite",
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vite build",
