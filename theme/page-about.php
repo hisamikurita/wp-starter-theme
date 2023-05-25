@@ -2,8 +2,14 @@
 get_header();
 ?>
 
-<div>
-  <h1 text-[30px]>ARCHIVE</h1>
+<div class="about">
+  <div class="pt-[90px]">
+    <div class="w-[1280px] mx-auto">
+      <h1 class="text-[120px] text-center">
+        ABOUT
+      </h1>
+    </div>
+  </div>
 </div>
 
 <?php
