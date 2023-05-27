@@ -1,4 +1,4 @@
-# wp-env
+# wp-starter-theme
 
 ## Usage Environment
 
