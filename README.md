@@ -1,5 +1,7 @@
 # wp-starter-theme
 
+![wp-starter-theme](https://github.com/hisamikurita/wp-starter-theme/assets/47776346/7b128ba8-408e-4516-8196-713cefaf8b3a)
+
 ## Usage Environment
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
