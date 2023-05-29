@@ -14,3 +14,6 @@ define('URL_IMAGES', URL_ASSETS . 'images/');
 define('URL_HOME', home_url('/'));
 define('URL_ABOUT', URL_HOME . 'about/');
 define('URL_ARCHIVE', URL_HOME . 'archive/');
+
+// external url
+define('URL_CONTACT', 'https://liginc.co.jp/contact');

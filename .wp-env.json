@@ -15,7 +15,8 @@
     }
   },
   "mappings": {
-    "sql": "./sql"
+    "sql": "./sql",
+    "wp-content/uploads": "./uploads"
   },
   "config": {
     "WP_DEBUG": false
