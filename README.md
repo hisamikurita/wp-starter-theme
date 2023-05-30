@@ -39,3 +39,9 @@ npm run dev
 ```
 
 open <http://localhost:8000/>
+
+## Document
+
+- [wp-env](https://ja.wordpress.org/team/handbook/block-editor/reference-guides/packages/packages-env/)
+- [vite](https://ja.vitejs.dev/)
+- [tailwindcss](https://tailwindcss.com/)

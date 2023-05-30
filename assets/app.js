@@ -3,7 +3,7 @@
 
 // get styles
 import "./css/tailwind.css"
-import "./css/global.scss"
+import "./css/app.scss"
 
 // get scripts
 import './js/app.js'
