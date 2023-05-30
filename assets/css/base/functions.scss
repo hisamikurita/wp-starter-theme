@@ -1,0 +1,19 @@
+@function rem($size) {
+  @return $size / 16 * 1rem;
+}
+
+@function vw($size, $mode: pc) {
+  @return $size / bp($mode) * 100vw;
+}
+
+@function vw_sp($size, $mode: sp) {
+  @return $size / bp(sp) * 100vw;
+}
+
+@function vh($size, $height: $pc-bestview-height) {
+  @return $size / $height * 100vh;
+}
+
+@function vh_sp($size, $height: $sp-bestview-height) {
+  @return $size / $height * 100vh * 553/667;
+}
