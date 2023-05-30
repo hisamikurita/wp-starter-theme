@@ -1,0 +1,20 @@
+// breakpoints
+$breakpoints: (
+  "sm": 640px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1420px,
+);
+
+// design size
+$design-size: (
+  "pc-width": 1440,
+  "pc-height": 800,
+  "sp-width": 750,
+  "sp-height": 1334,
+);
+
+// animation
+$duration-short: 0.3s;
+$duration-base: 0.4s;
+$duration-full: 0.6s;
