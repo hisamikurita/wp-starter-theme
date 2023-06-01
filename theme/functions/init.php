@@ -17,6 +17,13 @@ remove_action('wp_print_styles', 'print_emoji_styles', 10);
 remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
 remove_action('wp_enqueue_scripts', 'wp_common_block_scripts_and_styles');
 
+remove_action('wp_head', 'feed_links', 2);
+remove_action('wp_head', 'feed_links_extra', 3);
+remove_action('do_feed_rdf', 'do_feed_rdf');
+remove_action('do_feed_rss', 'do_feed_rss');
+remove_action('do_feed_rss2', 'do_feed_rss2');
+remove_action('do_feed_atom', 'do_feed_atom');
+
 add_action('wp_enqueue_scripts', function () {
   wp_dequeue_style('classic-theme-styles');
 }, 20);

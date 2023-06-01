@@ -1,4 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
+// @use "./base/variables.scss" as *;
+// @use "./base/functions.scss" as *;
+@use "./base/mixins.scss" as *;
+
+.archive {
+  @include sp() {
+    font-size: 100px;
+  }
 }
