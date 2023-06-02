@@ -1,9 +1,17 @@
-// @use "./base/variables.scss" as *;
-// @use "./base/functions.scss" as *;
-@use "./base/mixins.scss" as *;
+// ベーススタイルを読み込む
+@forward "./base/destyle";
+@forward "./base/global";
 
-.archive {
-  @include sp() {
-    font-size: 100px;
-  }
-}
+// コンポーネントスタイルを読み込む
+@forward "./components/card-archive";
+
+// パーシャルスタイルを読み込む
+@forward "./partials/global-header";
+@forward "./partials/global-footer";
+
+// ページスタイルを読み込む
+@forward "./pages/front-page/";
+@forward "./pages/page-about/";
+@forward "./pages/page-privacy/";
+@forward "./pages/archive/";
+@forward "./pages/single/";

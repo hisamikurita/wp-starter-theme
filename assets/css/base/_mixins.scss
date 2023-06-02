@@ -1,5 +1,5 @@
-@use "./variables.scss" as *;
-@use "./functions.scss" as *;
+@use "/assets/css/base/variables" as *;
+@use "/assets/css/base/functions" as *;
 
 // hover可能なデバイスのみに適用
 @mixin hover {
@@ -17,18 +17,20 @@
   }
 }
 
+@mixin pc() {
+  @media screen and (min-width: #{map-get($breakpoints, lg)}) {
+    @content;
+  }
+}
+
 @mixin tab() {
-  @include mq_free(map-get($breakpoints, lg)) {
+  @media screen and (max-width: #{map-get($breakpoints, lg)}) {
     @content;
   }
 }
 
 @mixin sp() {
-  @include mq_free(map-get($breakpoints, md)) {
+  @media screen and (max-width: #{map-get($breakpoints, md)}) {
     @content;
   }
-}
-
-@mixin test() {
-  font-size: 100px;
 }
