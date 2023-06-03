@@ -1,7 +1,6 @@
 @use "/assets/css/base/variables" as *;
 @use "sass:math";
 
-// calculation
 @function rem($size) {
   @return math.div($size, 16) * 1rem;
 }
