@@ -15,3 +15,8 @@
 @forward "./pages/page-privacy/";
 @forward "./pages/archive/";
 @forward "./pages/single/";
+
+// tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

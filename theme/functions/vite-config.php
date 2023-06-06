@@ -1,5 +1,8 @@
 <?php
 
+// $dev = getenv('DEV');
+// var_dump(wp_get_environment_type());
+
 //develop mode config
 define("IS_VITE_DEVELOPMENT", true);
 
@@ -16,6 +19,20 @@ function vite_src_js($name)
   } else {
     // production mode
     return URL_JS . $name;
+  }
+}
+
+/**
+ * @return ローカル環境と本番環境のCSSのパスを返す
+ */
+function vite_src_css($name)
+{
+  if (defined('IS_VITE_DEVELOPMENT') && IS_VITE_DEVELOPMENT === true) {
+    // develop mode
+    return VITE_SERVER . '/assets/css/' . $name;
+  } else {
+    // production mode
+    // return URL_CSS . $name;
   }
 }
 
