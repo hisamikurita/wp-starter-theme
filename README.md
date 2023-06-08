@@ -14,7 +14,7 @@
 package install
 
 ```bash
-npm run ci or npm run install
+npm ci or npm install
 ```
 
 wp start up & db import
