@@ -20,7 +20,7 @@ npm ci or npm install
 wp start up & db import
 
 ```bash
-npm run wp-setup
+npm run wp:setup
 ```
 
 wp login
@@ -45,7 +45,7 @@ open <http://localhost:8000/>
 lint check
 
 ```bash
-npm run lint
+npm run lint:check
 ```
 
 lint fix
@@ -56,6 +56,7 @@ npm run lint:fix
 
 lint check timing vscode save & pre-commit<br>
 vscode save lint check must plugins
+
 - [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
