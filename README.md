@@ -54,11 +54,11 @@ lint fix
 npm run lint:fix
 ```
 
-lint check timing vscode save & pre-commit
+lint check timing vscode save & pre-commit<br>
 vscode save lint check must plugins
-- [prettier]([https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode))
-- [eslint]([[https://ja.vitejs.dev/](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint))
-- [stylelint]([[https://ja.vitejs.dev/](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)]([https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)))
+- [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
 ## Document
 
