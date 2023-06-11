@@ -40,6 +40,20 @@ npm run dev
 
 open <http://localhost:8000/>
 
+## Lint
+
+lint check
+
+```bash
+npm run lint
+```
+
+lint fix
+
+```bash
+npm run lint:fix
+```
+
 ## Document
 
 - [wp-env](https://ja.wordpress.org/team/handbook/block-editor/reference-guides/packages/packages-env/)
