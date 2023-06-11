@@ -54,6 +54,8 @@ lint fix
 npm run lint:fix
 ```
 
+lint check timing vscode save & pre-commit
+
 ## Document
 
 - [wp-env](https://ja.wordpress.org/team/handbook/block-editor/reference-guides/packages/packages-env/)
