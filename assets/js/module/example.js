@@ -1,3 +1,3 @@
 export const example = () => {
-  console.log('init')
-}
+  // console.log('init')
+};
