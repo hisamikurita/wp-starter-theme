@@ -4,7 +4,6 @@
  * variables
  */
 
-// assets
 define('URL_ASSETS', get_template_directory_uri() . '/assets/');
 define('URL_CSS', URL_ASSETS . 'css/');
 define('URL_JS', URL_ASSETS . 'js/');

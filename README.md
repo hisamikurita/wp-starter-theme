@@ -2,14 +2,14 @@
 
 ![wp-starter-theme](https://github.com/hisamikurita/wp-starter-theme/assets/47776346/7b128ba8-408e-4516-8196-713cefaf8b3a)
 
-## Usage Environment
+## 🐶 Usage Environment
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 - Node.js 16
 - [Composer](https://getcomposer.org/)
 - [WP-CLI](https://wp-cli.org/)
 
-## Local Environment Setup
+## 😌 Local Environment Setup
 
 package install
 
@@ -40,7 +40,15 @@ npm run dev
 
 open <http://localhost:8000/>
 
-## Lint
+## 💻 Production Upload
+
+```bash
+npm run build
+```
+
+upload /dist/\*_/_
+
+## ✋ Lint
 
 lint check
 
@@ -61,7 +69,7 @@ vscode save lint check must plugins
 - [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
-## Document
+## 👀 Document
 
 - [wp-env](https://ja.wordpress.org/team/handbook/block-editor/reference-guides/packages/packages-env/)
 - [vite](https://ja.vitejs.dev/)
