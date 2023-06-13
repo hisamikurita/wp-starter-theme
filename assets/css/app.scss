@@ -1,6 +1,7 @@
 // ベーススタイルを読み込む
 @forward "./base/destyle";
 @forward "./base/global";
+@forward "./base/editor";
 
 // コンポーネントスタイルを読み込む
 @forward "./components/card-archive";
