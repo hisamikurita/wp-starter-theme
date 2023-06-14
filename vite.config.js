@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { liveReload } from "vite-plugin-live-reload";
 import imageminPlugin from "vite-plugin-imagemin";
+import sassGlobImports from "vite-plugin-sass-glob-import";
 
 export default defineConfig({
   plugins: [
@@ -31,6 +32,7 @@ export default defineConfig({
         speed: 4,
       },
     }),
+    sassGlobImports(),
   ],
   root: "",
   build: {

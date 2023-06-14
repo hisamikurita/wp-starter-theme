@@ -1,5 +1,16 @@
-@use "/assets/css/base/variables" as *;
-@use "/assets/css/base/functions" as *;
+// 三点リーダー
+@mixin line-clamp($num, $num-sp: null) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+
+  @if $num-sp {
+    @include sp {
+      -webkit-line-clamp: $num-sp;
+    }
+  }
+}
 
 // hover可能なデバイスのみに適用
 @mixin hover {

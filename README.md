@@ -46,7 +46,7 @@ open <http://localhost:8000/>
 npm run build
 ```
 
-upload /dist/\*_/_
+upload all files under dist
 
 ## ✋ Lint
 

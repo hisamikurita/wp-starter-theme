@@ -1,21 +1,29 @@
 <?php
 get_header();
+
+// ページネーション
+$pagination_range = 1;
+$pagination_add_first_and_last = true;
+$pagination = get_pagination($pagination_range, $pagination_add_first_and_last);
 ?>
 
 <div class="archive">
   <div class="pt-[90px]">
     <div class="w-[1280px] mx-auto">
-      <h1 class="text-[120px] text-center">
-        ARCHIVE
-      </h1>
+      <?php get_template_part('./components/heading-page', null, [
+        'title' => 'ARCHIVE',
+      ]) ?>
       <!-- メインループ -->
       <?php if (have_posts()) : ?>
-        <ul class="grid grid-cols-3 gap-[40px]">
+        <ul class="grid grid-cols-3 gap-[40px] mt-[100px]">
           <?php while (have_posts()) : the_post();
             $id = get_the_ID();
             $title = get_the_title();
             $href = get_permalink();
-            $category = get_the_category()[0]->name;
+            $categorys = [
+              'name' => get_the_category()[0]->name,
+              'slug' => get_the_category()[0]->slug,
+            ];
             $image_id = get_post_thumbnail_id($id);
             $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
             $image_src = get_the_post_thumbnail_url();
@@ -27,7 +35,7 @@ get_header();
             <li>
               <?php get_template_part('./components/card-archive', null, [
                 'title' => $title,
-                'category' => $category,
+                'categorys' => $categorys,
                 'href' => $href,
                 'images' => $images,
               ]) ?>
@@ -35,6 +43,11 @@ get_header();
           <?php endwhile; ?>
         </ul>
       <?php endif; ?>
+      <div>
+        <?php get_template_part('./components/pagination', null, [
+          'pagination' => $pagination,
+        ]) ?>
+      </div>
     </div>
   </div>
 </div>

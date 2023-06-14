@@ -1,23 +1,21 @@
 // ベーススタイルを読み込む
-@forward "./base/destyle";
-@forward "./base/global";
-@forward "./base/editor";
+@import "./base/variables";
+@import "./base/functions";
+@import "./base/mixins";
+@import "./base/destyle";
+@import "./base/global";
+@import "./base/editor";
 
 // コンポーネントスタイルを読み込む
-@forward "./components/card-archive";
+@import "./components/**/*";
 
-// パーシャルスタイルを読み込む
-@forward "./partials/global-header";
-@forward "./partials/global-footer";
+// // パーシャルスタイルを読み込む
+@import "./partials/**/*";
 
-// ページスタイルを読み込む
-@forward "./pages/front-page/";
-@forward "./pages/page-about/";
-@forward "./pages/page-privacy/";
-@forward "./pages/archive/";
-@forward "./pages/single/";
+// // ページスタイルを読み込む
+@import "./pages/**/*";
 
-// tailwind
+// // tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
