@@ -5,7 +5,7 @@
 ## 🐶 Usage Environment
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
-- Node.js 16
+- Node.js >= 16
 - [Composer](https://getcomposer.org/)
 - [WP-CLI](https://wp-cli.org/)
 
