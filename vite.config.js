@@ -7,7 +7,7 @@ import sassGlobImports from "vite-plugin-sass-glob-import";
 
 export default defineConfig({
   plugins: [
-    liveReload(__dirname + "/**/*.php"),
+    liveReload("./**/*.php"),
     viteStaticCopy({
       targets: [
         {

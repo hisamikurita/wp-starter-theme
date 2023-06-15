@@ -1,3 +1,8 @@
 .archive {
   position: relative;
+  z-index: 1;
+}
+
+.archive__pagination {
+  margin: 120px 0 0;
 }

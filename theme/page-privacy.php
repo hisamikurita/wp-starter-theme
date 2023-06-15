@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<div class="about">
+<div class="privacy">
   <div class="pt-[90px]">
     <div class="w-[1280px] mx-auto">
       <?php get_template_part('./components/heading-page', null, [

@@ -43,7 +43,7 @@ $pagination = get_pagination($pagination_range, $pagination_add_first_and_last);
           <?php endwhile; ?>
         </ul>
       <?php endif; ?>
-      <div>
+      <div class="archive__pagination">
         <?php get_template_part('./components/pagination', null, [
           'pagination' => $pagination,
         ]) ?>

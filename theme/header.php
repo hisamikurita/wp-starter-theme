@@ -8,5 +8,5 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class("bg-black p-[30px] font-yugo text-[16px] text-white"); ?>>
+<body <?php body_class(); ?>>
   <?php get_template_part('./partials/global-header') ?>
