@@ -11,19 +11,27 @@
 
 ## 😌 Local Environment Setup
 
-package install
+1. package install
 
 ```bash
 npm ci or npm install
 ```
 
-wp start up & db import
+2. wp start up & db import
 
 ```bash
 npm run wp:setup
 ```
 
-wp login
+3. frontend build start
+
+```bash
+npm run dev
+```
+
+open <http://localhost:8000/>
+
+- wp login
 
 open <http://localhost:8000/wp-admin>
 
@@ -31,14 +39,6 @@ open <http://localhost:8000/wp-admin>
 user : admin
 password : password
 ```
-
-frontend build start
-
-```bash
-npm run dev
-```
-
-open <http://localhost:8000/>
 
 ## 💻 Production Upload
 
