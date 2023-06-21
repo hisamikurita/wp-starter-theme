@@ -1,5 +1,5 @@
 <?php
-$pagination = $args['pagination'] ?? [];
+$pagination = $args['pagination'] ?? []; // array
 ?>
 
 <nav class="pagination">

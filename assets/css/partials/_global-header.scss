@@ -1,4 +1,12 @@
 .global-header {
-  position: relative;
+  position: fixed;
+  top: 30px;
+  left: 30px;
   z-index: 100;
+  font-size: vw(17);
+}
+
+.global-header__list {
+  display: flex;
+  gap: vw(20);
 }

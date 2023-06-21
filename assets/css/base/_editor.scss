@@ -2,7 +2,7 @@
   & h1 {
     padding-bottom: 18px;
     margin: 40px 0;
-    font-size: 32px;
+    font-size: vw(32);
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
@@ -12,7 +12,7 @@
   & h2 {
     padding-bottom: 18px;
     margin: 40px 0;
-    font-size: 20px;
+    font-size: vw(20);
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
@@ -22,19 +22,19 @@
   & h3 {
     padding: 8px 34px;
     margin: 40px 0;
-    font-size: 18px;
+    font-size: vw(18);
     font-weight: bold;
     line-height: 1.8;
     color: $color-black;
     letter-spacing: 0.05em;
     background-color: $color-white;
-    border-radius: 10px;
+    border-radius: vw(10);
   }
 
   & h4 {
     padding: 0 18px;
     margin: 40px 0;
-    font-size: 16px;
+    font-size: vw(16);
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
@@ -43,7 +43,7 @@
 
   & h5 {
     margin: 40px 0;
-    font-size: 16px;
+    font-size: vw(16);
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
@@ -58,7 +58,7 @@
 
     & figcaption {
       margin: 18px 0 0;
-      font-size: 10px;
+      font-size: vw(10);
       font-weight: 500;
       line-height: 1.8;
       text-align: center;
@@ -74,7 +74,7 @@
     margin: 32px 0;
 
     & li {
-      font-size: 14px;
+      font-size: vw(14);
       line-height: 1.8;
       letter-spacing: 0.02em;
 
@@ -94,7 +94,7 @@
     counter-reset: num;
 
     & li {
-      font-size: 14px;
+      font-size: vw(14);
       line-height: 1.8;
       letter-spacing: 0.02em;
 
@@ -116,7 +116,7 @@
     & p {
       padding: 38px;
       margin: 0;
-      font-size: 12px;
+      font-size: vw(12);
       line-height: 2;
       letter-spacing: 0.05em;
       background-color: #e9e2da;
@@ -125,7 +125,7 @@
 
   & p {
     margin: 32px 0;
-    font-size: 16px;
+    font-size: vw(16);
     line-height: 1.8;
     letter-spacing: 0.025em;
   }
@@ -137,11 +137,14 @@
   & a[target="_blank"] {
     border-bottom: solid 1px $color-white;
 
-    &::before {
-      width: 10px;
-      height: 12px;
+    &::after {
+      display: inline-block;
+      width: vw(10);
+      height: vw(12);
+      margin: 0 0 0 6px;
       content: "";
-      background: url("../images/blank.svg") no-repeat center / cover;
+      background: url($base-dir + "assets/images/icon-blank.svg") no-repeat
+        center / cover;
     }
   }
 }

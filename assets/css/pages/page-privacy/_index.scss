@@ -2,8 +2,16 @@
   position: relative;
 }
 
+.privacy__bg {
+  padding: 140px 0 0;
+}
+
+.privacy__inner {
+  margin: 120px 0 0;
+}
+
 .privacy__text {
-  font-size: 17px;
+  font-size: vw(17);
   line-height: 1.6;
   letter-spacing: 0.02em;
 }
@@ -19,7 +27,7 @@
 .privacy__contents__title {
   position: relative;
   padding: 0 0 0 24px;
-  font-size: 32px;
+  font-size: vw(32);
   font-weight: bold;
   line-height: 1.6;
   letter-spacing: 0.06em;
@@ -37,7 +45,7 @@
 
 .privacy__contents__text {
   margin: 30px 0 0;
-  font-size: 17px;
+  font-size: vw(17);
   line-height: 1.6;
   letter-spacing: 0.02em;
 }

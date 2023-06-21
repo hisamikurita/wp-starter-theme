@@ -1,3 +1,3 @@
-<footer>
-  <p><small class="block mt-[100px] text-[16px] text-center">Copyright © Webst8 All Rights Reserved.</small></p>
+<footer class="global-footer">
+  <p><small class="global-footer__copyright">Copyright © Webst8 All Rights Reserved.</small></p>
 </footer>

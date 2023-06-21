@@ -48,6 +48,14 @@ npm run build
 
 upload all files under dist
 
+## 🌙 How to reference images from Css
+
+$base-dir is paths change between local and production environments.
+
+```bash
+background-image: url($base-dir + "assets/images/icon-blank.svg");
+```
+
 ## ✋ Lint
 
 lint check

@@ -61,6 +61,17 @@ export default defineConfig({
       },
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `$base-dir: ${
+          process.env.NODE_ENV === "development"
+            ? "'http://localhost:3000/'"
+            : "'/'"
+        };`,
+      },
+    },
+  },
   server: {
     cors: true,
     strictPort: true,

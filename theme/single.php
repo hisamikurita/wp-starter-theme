@@ -14,7 +14,7 @@ $images = [
 
 <div class="single">
   <div class="single__bg">
-    <div class="single__container">
+    <div class="container">
       <?php get_template_part('./components/heading-page', null, [
         'title' => 'SINGLE',
       ]) ?>

@@ -2,7 +2,7 @@
 export const gridHelper = () => {
   const grid = document.querySelector(".js-helper-grid");
   const lines = document.querySelectorAll(".js-helper-grid-line");
-  let isDebug = false;
+  let isDebug = true;
 
   const renderLinePosition = () => {
     lines.forEach((line, index) => {
@@ -21,10 +21,10 @@ export const gridHelper = () => {
 
   document.addEventListener("keypress", (e) => {
     if (e.code == "KeyD" && isDebug == false) {
-      grid.classList.remove("invisible");
+      grid.classList.remove("is-hidden");
       isDebug = true;
     } else {
-      grid.classList.add("invisible");
+      grid.classList.add("is-hidden");
       isDebug = false;
     }
   });

@@ -3,12 +3,12 @@ get_header();
 ?>
 
 <div class="privacy">
-  <div class="pt-[90px]">
-    <div class="w-[1280px] mx-auto">
+  <div class="privacy__bg">
+    <div class="container">
       <?php get_template_part('./components/heading-page', null, [
         'title' => 'PRIVACY POLICY',
       ]) ?>
-      <div class="mt-[100px]">
+      <div class="privacy__inner">
         <p class="privacy__text">
           （以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。
         </p>
