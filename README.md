@@ -81,4 +81,3 @@ vscode save lint check must plugins
 
 - [wp-env](https://ja.wordpress.org/team/handbook/block-editor/reference-guides/packages/packages-env/)
 - [vite](https://ja.vitejs.dev/)
-- [tailwindcss](https://tailwindcss.com/)
