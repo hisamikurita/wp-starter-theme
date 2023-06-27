@@ -28,6 +28,20 @@ get_header();
         </div>
         <p class="index__column__text">どっちは事実同時にこの約束方に対して事のためをあるたう。どうしても今が命令目は無論この前後ますありなりがするていたからはお話間違っでまして、しばらくには云っんたでた。客をただすんのはひとまず事実でしかるにたないだろ。もっと木下さんで融通中学始終修養にしで世の中この顔何か附随にというお意見たんたなくが、その結果ぞ私か国民師範に述べると、大森さんの事をご免の私をまずご注意と払って私先輩をご安心を亡びるようによほどご意味がいううだば、まるでもし膨脹へおりならで得るだ旨であるですござい。</p>
       </div>
+      <div class="index__accordion">
+        <dl class="index__accordion__dl">
+          <dt class="index__accordion__dt js-accordion-btn"><button>アコーディオン1</button></dt>
+          <dd class="index__accordion__dd js-accordion-contents">アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身アコーディオン1の中身</dd>
+        </dl>
+        <dl class="index__accordion__dl">
+          <dt class="index__accordion__dt js-accordion-btn"><button>アコーディオン2</button></dt>
+          <dd class="index__accordion__dd js-accordion-contents">アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身アコーディオン2の中身</dd>
+        </dl>
+        <dl class="index__accordion__dl">
+          <dt class="index__accordion__dt js-accordion-btn"><button>アコーディオン3</button></dt>
+          <dd class="index__accordion__dd js-accordion-contents">アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身</dd>
+        </dl>
+      </div>
     </div>
   </div>
 </div>
