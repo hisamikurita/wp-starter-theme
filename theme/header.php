@@ -10,6 +10,6 @@
   <?php wp_head(); ?>
 </head>
 
-<body data-type="<?= IS_TYPE ?>" <?php body_class(); ?>>
+<body id="top" data-type="<?= IS_TYPE ?>" <?php body_class(); ?>>
   <?php if (IS_TYPE_LOCAL) get_template_part('./partials/helper-grid') ?>
   <?php get_template_part('./partials/global-header') ?>

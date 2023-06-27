@@ -21,6 +21,15 @@
   }
 }
 
+.index__anchor__list {
+  margin: 62px 0 0;
+  font-size: vw(18);
+}
+
+.index__anchor__item:not(:first-of-type) {
+  margin: 10px 0 0;
+}
+
 .index__column {
   display: flex;
   gap: 2rem;
