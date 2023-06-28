@@ -3,11 +3,12 @@ export const tab = () => {
 
   btns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      const target = e.currentTarget;
-      const tabId = target.dataset.tab;
-      const targetContents = document.querySelector(`#${tabId}`);
+      const targetBtn = e.currentTarget;
+      const tabId = targetBtn.dataset.tab;
+      const targetContent = document.querySelector(`#${tabId}`);
       const tabContents = document.querySelectorAll(".js-tab-contents");
 
+      // reset
       btns.forEach((btn) => {
         btn.classList.remove("is-active");
       });
@@ -15,8 +16,9 @@ export const tab = () => {
         tabContent.classList.remove("is-active");
       });
 
-      targetContents.classList.add("is-active");
-      target.classList.add("is-active");
+      // add
+      targetContent.classList.add("is-active");
+      targetBtn.classList.add("is-active");
     });
   });
 };
