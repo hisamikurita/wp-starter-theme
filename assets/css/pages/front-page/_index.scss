@@ -74,3 +74,42 @@
   line-height: 1.6;
   letter-spacing: 0.02em;
 }
+
+.index__tab {
+  margin: 80px 0 0;
+}
+
+.index__tab__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index__tab__item {
+  width: 100%;
+  font-size: vw(15);
+  color: $color-black;
+  text-align: center;
+  background-color: $color-white;
+
+  & button {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+  }
+
+  &:not(:last-of-type) {
+    border-right: solid 1px $color-black;
+  }
+}
+
+.index__tab__contents {
+  display: none;
+  margin: 12px 0 0;
+  font-size: vw(16);
+  line-height: 1.6;
+
+  &.is-active {
+    display: block;
+  }
+}

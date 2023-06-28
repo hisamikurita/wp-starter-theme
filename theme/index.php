@@ -42,6 +42,18 @@ get_header();
           <dd class="index__accordion__dd js-accordion-contents">アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身アコーディオン3の中身</dd>
         </dl>
       </div>
+      <div class="index__tab">
+        <ul class="index__tab__list">
+          <li class="index__tab__item js-tab-btn" data-tab="contents01"><button>タブ1</button></li>
+          <li class="index__tab__item js-tab-btn" data-tab="contents02"><button>タブ2</button></li>
+          <li class="index__tab__item js-tab-btn" data-tab="contents03"><button>タブ3</button></li>
+        </ul>
+        <ul>
+          <li id="contents01" class="index__tab__contents js-tab-contents">タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身タブ1の中身</li>
+          <li id="contents02" class="index__tab__contents js-tab-contents">タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身タブ2の中身</li>
+          <li id="contents03" class="index__tab__contents js-tab-contents">タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身タブ3の中身</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
