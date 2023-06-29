@@ -56,6 +56,28 @@ $base-dir is paths change between local and production environments.
 background-image: url($base-dir + "assets/images/icon-blank.svg");
 ```
 
+## 🍰 IMAGE
+
+use images
+
+```bash
+<?= vite_src_images('sample-01.jpg') ?>
+```
+
+## 😎 SVG
+
+use svg-sprite
+
+```bash
+<?= get_svg_sprite('icon-blank') ?>
+```
+
+use image svg
+
+```bash
+<?= vite_src_images('icon-blank.svg') ?>
+```
+
 ## ✋ Lint
 
 lint check

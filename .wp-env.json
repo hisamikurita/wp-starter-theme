@@ -21,6 +21,6 @@
     "wp-content/uploads": "./uploads"
   },
   "config": {
-    "WP_DEBUG": true
+    "WP_DEBUG": false
   }
 }

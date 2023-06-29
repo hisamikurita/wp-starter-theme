@@ -4,6 +4,7 @@ import { viteStaticCopy } from "vite-plugin-static-copy";
 import { liveReload } from "vite-plugin-live-reload";
 import imageminPlugin from "vite-plugin-imagemin";
 import sassGlobImports from "vite-plugin-sass-glob-import";
+import svgSpritePlugin from "vite-plugin-svg-sprite-component";
 
 export default defineConfig({
   plugins: [
@@ -33,6 +34,7 @@ export default defineConfig({
       },
     }),
     sassGlobImports(),
+    svgSpritePlugin(),
   ],
   root: "",
   build: {
