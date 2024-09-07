@@ -15,17 +15,13 @@ export const gridHelper = () => {
     };
     renderLinePosition();
 
-    window.addEventListener("resize", () => {
-        renderLinePosition();
-    });
-
-    document.addEventListener("keypress", (e) => {
-        if (e.code == "KeyD" && isPress == false) {
-            grid.classList.remove("is-hidden");
-            isPress = true;
-        } else {
-            grid.classList.add("is-hidden");
-            isPress = false;
-        }
-    });
+  document.addEventListener("keypress", (e) => {
+    if (e.code == "KeyD" && isPress == false) {
+      grid?.classList.remove("is-hidden");
+      isPress = true;
+    } else {
+      grid?.classList.add("is-hidden");
+      isPress = false;
+    }
+  });
 };
