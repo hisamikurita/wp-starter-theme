@@ -20,4 +20,5 @@ export const tab = () => {
       targetContent?.classList.add("is-active");
       targetBtn?.classList.add("is-active");
     });
+	})
 };
