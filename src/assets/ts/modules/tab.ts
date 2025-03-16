@@ -3,8 +3,8 @@ export const tab = () => {
 
   btns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      const targetBtn = e.currentTarget;
-      const tabId = targetBtn?.dataset.tab;
+			const targetBtn = e.currentTarget as HTMLButtonElement;
+			const tabId = targetBtn?.dataset.tab;
       const targetContent = document.querySelector(`#${tabId}`);
       const tabContents = document.querySelectorAll(".js-tab-contents");
 

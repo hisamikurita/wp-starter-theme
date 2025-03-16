@@ -7,9 +7,9 @@ export const gridHelper = () => {
     const renderLinePosition = () => {
         lines.forEach((line, index) => {
             if (document.documentElement.clientWidth > 767) {
-                line.style.left = `calc(${index + 1} * 100vw / 60)`;
+              (line as HTMLElement).style.left = `calc(${index + 1} * 100vw / 60)`;
             } else {
-                line.style.left = `calc(${index + 1} * 100vw / 25)`;
+							(line as HTMLElement).style.left = `calc(${index + 1} * 100vw / 25)`;
             }
         });
     };

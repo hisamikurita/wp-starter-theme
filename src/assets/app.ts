@@ -1,3 +1,4 @@
+/// <reference types="vite/types/importMeta.d.ts" />
 // entry point
 // include your assets here
 
