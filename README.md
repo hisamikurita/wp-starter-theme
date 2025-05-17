@@ -113,7 +113,9 @@ Lint は husky でプリコミット時に必ず実行されます。以下の v
 - [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 - [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-## <a href="./CODE_STYLE.md">🥺 Project Specific Rules</a>
+## 🥺 Project Specific Rules
+
+プロジェクト固有のルールについては別途<a href="./RULES.md">こちら</a>に記載しています。一度目を通していただけると開発がしやすいです。
 
 ## 👀 Document
 

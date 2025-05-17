@@ -1,3 +1,5 @@
+# プロジェクト固有のルール
+
 ## 😺 Grid System
 
 案件によっては60分割のグリッドシステムによってデザインされています。<br>
@@ -53,6 +55,8 @@ background-image: url($base-dir + "assets/images/icon-blank.svg");
 ```
 
 ## 😎 Svg Sprite
+
+SVGを使用するときは以下の関数を使用してください。
 
 ```php
 <?= get_svg_sprite('logo', 'LIG') ?>
