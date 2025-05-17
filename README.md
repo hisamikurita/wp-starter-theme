@@ -1,24 +1,21 @@
 # wp-starter-theme
 
-## 🛜 WP Environment
+## 🌎 WordPress Environment
 
-本テンプレートはWordPressのアップデートが常に行われていくこと、運用が第三者になる可能性を考慮して互換性に特化したものになっています。<br>
-そのため`functions`のカスタムは最小限に留めて、必要な機能はプラグインに任せる方針になっています。
+本テンプレートはWordPressを効率的に開発するためのテンプレートです。WordPressのアップデートが常に行われていくこと、運用が第三者になる可能性を考慮して互換性に特化したものになっています。そのため`functions`のカスタムは最小限に留めて、必要な機能はプラグインに任せる方針になっています。
 
-WordPressは常に最新のバージョンを取得する設定になっています。プロジェクト開始時に `.wp-env.json` を編集してWordPressとプラグインのバージョンを固定することを推奨しています。
+また、WordPressは常に最新のバージョンを取得する設定になっています。プロジェクト開始時に `.wp-env.json` を編集してWordPressとプラグインのバージョンを固定することを推奨しています。
 
 - WP ver latest
 - PHP ver 8.1
 
-## 🔧 WP Plugins
+## 🔧 WordPress Plugins
 
 本番またはテストサーバーでは下記のプラグインをインストールすることを推奨しています。
 
-- https://ja.wordpress.org/plugins/webp-converter-for-media/
-- https://ja.wordpress.org/plugins/all-in-one-wp-security-and-firewall/
-- https://ja.wordpress.org/plugins/autoptimize/
-
-## 💰 Paid Plugins
+- [webp-converter-for-media](https://ja.wordpress.org/plugins/webp-converter-for-media/)
+- [all-in-one-wp-security-and-firewall](https://ja.wordpress.org/plugins/all-in-one-wp-security-and-firewall/)
+- [autoptimize](https://ja.wordpress.org/plugins/autoptimize/)
 
 下記の有料のプラグインを使用したい場合は運用者に連絡をしてください。リンクがダウンロードできるようになるので `/plugins`配下に設置してください。
 
@@ -76,6 +73,7 @@ npm run build
 ```json
 "VITE_SERVER": "http://0.0.0.0:3000"
 ```
+
 デフォルトでは 0.0.0.0 が指定されており、ローカルネットワーク上の他のデバイスからアクセスすることが可能です。
 
 ネットワーク経由でのアクセスが必要な場合、`npm run dev`を実行した際にNetwork部分に表示されるIPアドレスをVITE_SERVERの値に一時的に変更する必要があります。
@@ -85,7 +83,8 @@ npm run build
 "VITE_SERVER": "http://100.00.0.000:3000"
 ```
 
-※.wp-env.json は Git 管理されているため、ネットワークアクセスのための変更はコミットしないようにしてください。<br />暫定的な変更として行い、変更が不要になったら元に戻すか、変更を破棄してください。
+[!NOTE]
+.wp-env.json は Git 管理されているため、ネットワークアクセスのための変更はコミットしないようにしてください。暫定的な変更として行い、変更が不要になったら元に戻すか、変更を破棄してください。
 
 VITE_SERVERの値を反映するために以下のコマンドを実行します。
 
@@ -114,14 +113,14 @@ open <http://100.00.0.000:3030/>
 ```scss
 // NG
 .hoge {
-  &__title {
-    color: black;
-  }
+	&__title {
+		color: black;
+	}
 }
 
 // OK
 .hoge__title {
-  color: black;
+	color: black;
 }
 ```
 
@@ -131,7 +130,7 @@ open <http://100.00.0.000:3030/>
 
 ```scss
 .hoge {
-  font-size: vw(16);
+	font-size: vw(16);
 }
 ```
 
@@ -139,7 +138,7 @@ open <http://100.00.0.000:3030/>
 
 ```scss
 .hoge {
-  width: rem(1); // 1グリッド
+	width: rem(1); // 1グリッド
 }
 ```
 
@@ -194,7 +193,7 @@ npm run lint:check
 npm run lint:fix
 ```
 
-Lint はプリコミット時に必ず実行されます。以下の vscode プラグインをインストールすると vscode 保存時にも Lint を実行することができるので便利です。
+Lint はプリコミット時に必ず実行されます。以下の vscode プラグインをインストールすると vscode 保存時にも実行することができるので便利です。
 
 - [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [markuplint](https://marketplace.visualstudio.com/items?itemName=yusukehirao.vscode-markuplint)
@@ -214,4 +213,5 @@ Lint はプリコミット時に必ず実行されます。以下の vscode プ�
 
 - All-in-One WP Migrationでローカル環境のデータベースをエクスポートしてテストサイトにインポートした際に、テーマファイルが「src」になる
 
-テーマは通常、Git管理され、CI/CDを通じてデプロイされるため、All-in-One WP Migrationのエクスポートに含めないことを推奨しています。<br>データベースのバックアップや移行が主な目的であれば、All-in-One WP Migrationでデータベースのみをエクスポートし、インポートすることが推奨されます。
+[!NOTE]
+WordPressのテーマは通常、Git管理されてCI/CDを通じてデプロイされるため、All-in-One WP Migrationのエクスポートに含めないことを推奨しています。データベースのバックアップや移行が主な目的であれば、All-in-One WP Migrationでデータベースのみをエクスポートし、各種環境にインポートすることが推奨されます。
