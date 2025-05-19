@@ -1,4 +1,4 @@
-import { backfaceFixed } from "../utility/backface-fixed";
+import { backfaceFixed } from "../utils/backface-fixed";
 
 export const hamburgerMenu = () => {
 	const body = document.querySelector("body");

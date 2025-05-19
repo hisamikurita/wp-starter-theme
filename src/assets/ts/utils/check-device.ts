@@ -1,4 +1,4 @@
-import { BREAKPOINT } from "../variables";
+import { BREAKPOINT } from "../constants";
 
 const ua = navigator.userAgent.toLowerCase();
 

@@ -4,21 +4,21 @@ import { tab } from "./modules/tab";
 import { modal } from "./modules/modal";
 import { hamburgerMenu } from "./modules/hamburger-menu";
 import { accordion } from "./modules/accordion";
-import { viewportFix, viewportSize } from "./utility/viewport";
-import { gridHelper } from "./helper/grid";
-import { IS_TYPE_LOCAL } from "./variables";
+import { viewportFix, viewportSize } from "./utils/viewport";
+import { gridHelper } from "./utils/grid-helper";
+import { IS_TYPE_LOCAL } from "./constants";
 
 /**
  * viewportに関する処理
  */
-window.addEventListener("load", () => {
-    viewportSize();
-    viewportFix();
+window.addEventListener("DOMContentLoaded", () => {
+	viewportSize();
+	viewportFix();
 });
 
 window.addEventListener("resize", () => {
-    viewportSize();
-    viewportFix();
+	viewportSize();
+	viewportFix();
 });
 
 /**
@@ -30,4 +30,6 @@ anchorLink();
 tab();
 modal();
 accordion();
+
+// グリッドシステムを使用しない場合は、以下のコードをコメントアウトしてください。
 if (IS_TYPE_LOCAL) gridHelper();
