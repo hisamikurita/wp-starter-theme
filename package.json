@@ -19,14 +19,14 @@
     "lint:check": "npm run lint:html && npm run lint:style && npm run lint:es",
     "lint:html": "markuplint 'src/**/*.{html,php}'",
     "lint:style": "stylelint 'src/assets/**/*.{css,scss}'",
-    "lint:es": "eslint 'src/assets/**/*.js'",
-    "lint:fix": "markuplint 'src/**/*.{html,php}' && stylelint --fix 'src/assets/**/*.{css,scss}' && eslint --fix 'src/assets/**/*.js'",
-    "format": "prettier --write 'src/**/*.{html,css,scss,js,json,php}'",
+    "lint:es": "eslint 'src/assets/**/*.{js,ts}'",
+    "lint:fix": "markuplint 'src/**/*.{html,php}' && stylelint --fix 'src/assets/**/*.{css,scss}' && eslint --fix 'src/assets/**/*.{js,ts}'",
+    "format": "prettier --write 'src/**/*.{html,css,scss,js,ts,json}'",
     "prepare": "husky install"
   },
   "lint-staged": {
     "*.{html,php}": "markuplint",
-    "*.{js}": "eslint --fix",
+    "*.{js,ts}": "eslint --fix",
     "*.{css,scss}": "stylelint --fix",
     "*.{html,css,scss,js,json,php}": "prettier --write"
   },
@@ -35,6 +35,8 @@
   "devDependencies": {
     "@markuplint/php-parser": "^3.10.0",
     "@types/node": "^22.13.10",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
     "@wordpress/env": "^5.15.0",
     "autoprefixer": "^10.4.14",
     "commander": "^11.0.0",

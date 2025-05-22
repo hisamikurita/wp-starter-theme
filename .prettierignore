@@ -4,3 +4,5 @@ package-lock.json
 .git
 .vscode/*
 !.vscode/extensions.json
+*.php
+**/*.php
