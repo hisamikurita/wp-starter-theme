@@ -1,0 +1,35 @@
+name: Lint
+
+on:
+  push:
+    branches: [master, main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      #公式のアクション「actions/checkout」実行する。リポジトリをクローンしてくる
+      - name: 📦 Get latest code
+        uses: actions/checkout@v3
+
+      #nodeのバージョンを指定
+      - name: 💻 Setup node
+        uses: actions/setup-node@v3 #公式のアクションを使用する
+        with: #引数でバージョン指定
+          node-version: "18"
+
+      #モジュールのキャッシュ
+      - name: ⚡ Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      #node moduleをインストール
+      - name: 😉 Install modules
+        run: npm install && npm rebuild --arch=x64 --platform=linux sharp
+        working-directory: ./ #ディレクトリのトップで実行
+
+      - run: npm run lint:check
