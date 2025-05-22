@@ -32,6 +32,5 @@ jobs:
         run: npm install && npm rebuild --arch=x64 --platform=linux sharp
         working-directory: ./ #ディレクトリのトップで実行
 
-			- name: 🐶 Lint Project
-				run: npm run format && npm run lint:fix
-
+      - name: 🐶 Lint Project
+        run: npm run format && npm run lint:fix
